@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+    /* Main */
+
+    body {
+        font-family: "Nunito", sans-serif;
+        font-weight: 600;
+        text-align: center;
+        padding: 20px;
+        background: #93a5fa;
+        color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(to top, #7E88EF, #7E88EF), linear-gradient(to right, #BCA4F3, #8CAFFB);
+    }
+
+    /* Text */
+
+    h1 {
+        text-shadow: #FFF 1px 0 10px;
+        font-size: 30px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    /* Buttons */
+
+    .button {
+        font-family: "Nunito", sans-serif;
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #66609D;
+        background: linear-gradient(15deg,#D9D9FD, #FFF);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: opacity 0.3s;
+        box-shadow: 0px 5px 14px -10px rgba(34, 60, 80, 0.9);
+    }
+
+    .ok-button:hover {
+        opacity: 0.7;
+    }
+
+    .ok-button {
+        background: linear-gradient(45deg, #D9D9FD, #FFF);
+        box-shadow: 0 5px 0 rgba(144, 139, 206, 0.5);
+        font-weight: 600;
+        width: 400px;
+        align-items: center;
+    }
+
+    .ok-button:active {
+        transform: translateY(3px);
+    }
+
+    .key {
+        font-size: 12px;
+    }
+
+    /* Icon */
+
+    .logotype {
+        opacity: 0.6;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+
+    /* Background */
+
+    .glass-container {
+        width: 600px;
+        height: 500px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="glass-container">
+    <h1>Добро пожаловать!</h1>
+    <p>Чтобы увеличить страницу, используй</p>
+    <div class="button key">Ctrl+Shift+I</div>
+    <p>Чтобы уменьшить страницу, используй</p>
+    <div class="button key">Ctrl+Shift+O</div>
+    <div class="logotype">
+        <img src="/icons/Vector.svg" alt="logotype" height="40px" width="40px">
+    </div>
+    <div>
+        <button id="okButton" class="button ok-button">Понятно</button>
+    </div>
+</div>
+  <script src="hello.js"></script>
+</body>
+</html>

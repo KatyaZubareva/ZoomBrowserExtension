@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Zoom Extension",
+  "version": "1.0",
+  "author": "Alena Shamis",
+  "description": "Extension to zoom in and out on web pages.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "commands": {
+    "zoom-in": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+I",
+        "mac": "Command+Shift+I"
+      },
+      "description": "Zoom in a web page."
+    },
+    "zoom-out": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+O",
+        "mac": "Command+Shift+O"
+      },
+      "description": "Zoom out a web page."
+    }
+  }
+}

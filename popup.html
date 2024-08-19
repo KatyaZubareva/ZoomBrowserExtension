@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Zoomer</title>
+  <style>
+    /* Main */
+
+    body {
+      font-family: "Nunito", sans-serif;
+      font-weight: 600;
+      padding-top: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to top, #7E88EF, #7E88EF), linear-gradient(to right, #BCA4F3, #8CAFFB);
+    }
+
+    .wrapper {
+        padding: 40px;
+    }
+
+    /* Buttons */
+
+    button {
+        font-family: "Nunito", sans-serif;
+        font-weight: 600;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #66609D;
+        background: linear-gradient(15deg, #D9D9FD, #FFF);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: opacity 0.3s;
+        box-shadow: 0px 5px 14px -10px rgba(34, 60, 80, 0.9);
+        white-space: nowrap;
+    }
+
+    button:hover {
+        opacity: 0.7;
+    }
+
+    .button:hover {
+        opacity: 0.7;
+    }
+
+    .reset-button {
+        width: 100%;
+        background: linear-gradient(45deg, #D9D9FD, #FFF);
+        box-shadow: 0 5px 0 rgba(144, 139, 206, 0.5);
+    }
+
+    .reset-button:active {
+        transform: translateY(3px);
+    }
+
+    .zoom-btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #zoomLevel {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 30px;
+        font-size: 18px;
+        background: #FFF;
+        color: #66609D;
+        border-radius: 20px;
+    }
+
+    #zoomLevel {
+        white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="zoom-btns">
+      <button id="zoomIn">Zoom in</button>
+      <div id="zoomLevel" >100%</div>
+      <button id="zoomOut">Zoom out</button>
+    </div>
+    <div>
+      <button id="reset" class="button reset-button">Reset</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
+
